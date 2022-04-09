@@ -435,6 +435,37 @@ input[type=checkbox]:checked+label:before {
     color: var(--color-grey)
 }
 
+.anime {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0
+}
+
+.hide {
+    display: none
+}
+
+@-webkit-keyframes hide {
+    0% {
+        visibility: visible
+    }
+
+    100% {
+        visibility: hidden
+    }
+}
+
+@keyframes hide {
+    0% {
+        visibility: visible
+    }
+
+    100% {
+        visibility: hidden
+    }
+}
+
 .button__load {
     background: var(--color-blue);
     color: #fff;
